@@ -1,45 +1,69 @@
 html, body {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
   background-color: black;
 }
 
-#desk {
+#deskParts {
   position: relative;
-  top: 1%;
-  left: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 750px;
   width: 600px;
   height: 370px;
 }
 
 #leftLeg {
   background: url('../resources/deskLeftLeg.svg');
+  background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
   width: 35px;
   height: 350px;
-  left: 5px;
+  left: 15px;
   bottom: 0px;
 }
 
 #rightLeg {
   background: url('../resources/deskRightLeg.svg');
+  background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
   width: 150px;
   height: 350px;
-  right: 5px;
+  right: 15px;
   bottom: 0px;
 } 
 
 #top {
   background: url('../resources/deskTop.svg');
+  background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
   width: 600px;
   height: 30px;
   left: 0;
-  top: 0;
+  bottom: 340px;
+}
+
+#mugParts {
+  position: relative;
+  left: 675px;
+  top: 760px;
+  width: 75px;
+  height: 80px;
+}
+
+#mug {
+  background: url('../resources/mug.svg');
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  width: 80px;
+  height: 75px;
+  left: 10px;
+  bottom: 10px;
 }
