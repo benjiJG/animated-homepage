@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+#desk {
+  position: relative;
+  top: 1%;
+  left: 1%;
+  width: 600px;
+  height: 370px;
+}
+
+#leftLeg {
+  background: url('../resources/deskLeftLeg.svg');
+  z-index: 1;
+  position: absolute;
+  width: 35px;
+  height: 350px;
+  left: 5px;
+  bottom: 0px;
+}
+
+#rightLeg {
+  background: url('../resources/deskRightLeg.svg');
+  z-index: 1;
+  position: absolute;
+  width: 150px;
+  height: 350px;
+  right: 5px;
+  bottom: 0px;
+} 
+
+#top {
+  background: url('../resources/deskTop.svg');
+  z-index: 2;
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 0;
+  top: 0;
+}
