@@ -8,10 +8,9 @@ body {
 }
 
 #deskParts {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 750px;
+  position: fixed;
+  left: 660px;
+  bottom: -100px;
   width: 600px;
   height: 370px;
 }
@@ -50,9 +49,9 @@ body {
 }
 
 #mugParts {
-  position: relative;
-  left: 675px;
-  top: 760px;
+  position: fixed;
+  left: 685px;
+  bottom: 270px;
   width: 75px;
   height: 80px;
 }
@@ -64,6 +63,25 @@ body {
   position: absolute;
   width: 80px;
   height: 75px;
-  left: 10px;
-  bottom: 10px;
+  left: 0;
+  bottom: 0;
+}
+
+#pcParts {
+  position: fixed;
+  left: 625px;
+  bottom: 270px;
+  width: 350px;
+  height: 350px;
+}
+
+#pcStand {
+  background: url('../resources/pcStand.svg');
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 300px;
+  bottom: 0;
 }
