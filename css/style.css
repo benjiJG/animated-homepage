@@ -284,3 +284,27 @@ body {
   bottom: 10px;
   visibility: hidden;
 }
+
+/*#cursor {
+  background: url('../resources/key.svg');
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 210px;
+  bottom: 10px;
+  visibility: hidden;
+}
+
+#btn {
+  background: url('../resources/key.svg');
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 210px;
+  bottom: 10px;
+  visibility: hidden;
+}*/
