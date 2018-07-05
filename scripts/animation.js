@@ -8,16 +8,16 @@ $('document').ready(function(){
     .from('#rightLeg', 0.8, {bottom: '-=300px', ease: Bounce.easeOut}, 1)
 
   // Mug entrance
-    .from('#mug', 0.5, {scaleY: 0, transformOrigin: "50% bottom", ease: Sine.easeIn}, 2.3)
+    .from('#mug', 0.5, {scaleY: 0, transformOrigin: '50% bottom', ease: Sine.easeIn}, 2.3)
 
   // PC entrance
-    .from('#pcStand', 0.5, {scaleY: 0, transformOrigin: "50% bottom", ease: SlowMo.easeOut,}, 2.3)
-    .from('#pcMonitor', 0.5, {scaleY: 0, transformOrigin: "50% bottom", ease: SlowMo.easeOut}, 2.8)
-    .from('#pcScreen', 0.5, {scaleY: 0, scaleX: 0, opacity: 0.8, transformOrigin: "50% 50%", ease: Elastic.easeOut}, 3.5)
+    .from('#pcStand', 0.5, {scaleY: 0, transformOrigin: '50% bottom', ease: SlowMo.easeOut,}, 2.3)
+    .from('#pcMonitor', 0.5, {scaleY: 0, transformOrigin: '50% bottom', ease: SlowMo.easeOut}, 2.8)
+    .from('#pcScreen', 0.5, {scaleY: 0, scaleX: 0, opacity: 0.8, transformOrigin: '50% 50%', ease: Elastic.easeOut}, 3.5)
 
   // KBM entrance
-    .from('#keyboardBase', 0.5, {scaleY: 0.5, scaleX: 0.5, opacity: 0, transformOrigin: "50% 50%", ease: Sine.easeOut}, 3.5)
-    .from('#mouse', 0.5, {scaleY: 0.5, scaleX: 0.5, opacity: 0, transformOrigin: "50% 50%", ease: Sine.easeOut,}, 3.5)
+    .from('#keyboardBase', 0.5, {scaleY: 0.5, scaleX: 0.5, opacity: 0, transformOrigin: '50% 50%', ease: Sine.easeOut}, 3.5)
+    .from('#mouse', 0.5, {scaleY: 0.5, scaleX: 0.5, opacity: 0, transformOrigin: '50% 50%', ease: Sine.easeOut,}, 3.5)
   // Keyboard keys placed
     .staggerFrom(['#key1', '#key2', '#key3', '#key4', '#key5', '#key6', '#key7', '#key8', '#key9', '#key10', '#key11', '#key12', '#key13'], 0.5, {top: '-=25px', autoAlpha: 0}, 0.2)
 
@@ -31,5 +31,11 @@ $('document').ready(function(){
     .to('#mouse', 0.2, {bottom: '+=3'}, 8.4)
     .add( function(){ $('#btn').css('background', 'url(resources/btnSelected.svg)');  }, 8.4)
     
-    .to('body', 1, {backgroundColor: 'yellow', ease: RoughEase.ease.config({ template:  Sine.easeOut, strength: 2, points: 35, taper: "none", randomize: true, clamp: true}) });
+  // Light switching on effect
+    .to('body', 1, {backgroundColor: '#EEE999', ease: RoughEase.ease.config({ template:  Sine.easeOut, strength: 2, points: 35, taper: "none", randomize: true, clamp: true}) }, 8.5)
+
+  // Change screen elements
+    .to('#btn', 0.5, {opacity: 0, scaleX: 0, scaleY: 0}, 8.5)
+    .to('#cursor', 0.5, {opacity: 0}, 8.5)
+    .from('#box1', 0.5, {scaleX: 0, scaleY: 0, transformOrigin: '50% 50%', ease: Back.easeOut}, 9.3);
 });

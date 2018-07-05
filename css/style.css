@@ -308,3 +308,14 @@ body {
   bottom: 125px;
   visibility: hidden;
 }
+
+#box1 {
+  background: url('../resources/box1.svg');
+  background-repeat: no-repeat;
+  z-index: 3;
+  position: absolute;
+  width: 105px;
+  height: 75px;
+  left: 190px;
+  bottom: 150px;
+}
