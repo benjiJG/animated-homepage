@@ -27,5 +27,9 @@ $('document').ready(function(){
     .to('#mouse', 2, {left: '-=25px', ease: Sine.easeInOut}, 6.2)
     .add( function(){ $('#btn').css('background', 'url(resources/btnSelected.svg)');  }, 7.8)
     .to('#mouse', 0.2, {bottom: '-=3'}, 8.2)
-    .to('#mouse', 0.2, {bottom: '+=3'}, 8.4);
+    .add( function(){ $('#btn').css('background', 'url(resources/btn.svg)'); }, 8.2)
+    .to('#mouse', 0.2, {bottom: '+=3'}, 8.4)
+    .add( function(){ $('#btn').css('background', 'url(resources/btnSelected.svg)');  }, 8.4)
+    
+    .to('body', 1, {backgroundColor: 'yellow', ease: RoughEase.ease.config({ template:  Sine.easeOut, strength: 2, points: 35, taper: "none", randomize: true, clamp: true}) });
 });
