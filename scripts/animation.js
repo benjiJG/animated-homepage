@@ -25,35 +25,7 @@ $('document').ready(function(){
     .to('#btn', 0.5, {autoAlpha: 1}, 6)
     .to('#cursor', 2, {left: '-=75px', autoAlpha: 1, ease: Sine.easeInOut,}, 6.2)
     .to('#mouse', 2, {left: '-=25px', ease: Sine.easeInOut}, 6.2)
-    .add( collisionCheck, 7.8)
+    .add( function(){ $('#btn').css('background', 'url(resources/btnSelected.svg)');  }, 7.8)
     .to('#mouse', 0.2, {bottom: '-=3'}, 8.2)
     .to('#mouse', 0.2, {bottom: '+=3'}, 8.4);
 });
-
-// Checks to see if cursor has collided with button to 'select' it
-var collisionCheck = function() {
-  if ( isColliding($('#cursor'), $('#btn')) ) {
-    $('#btn').css('background', 'url(resources/btnSelected.svg)'); 
-  }
-}
-
-var isColliding = function( $div1, $div2 ) {
-	// Div 1 data
-	var d1_offset             = $div1.offset();
-	var d1_height             = $div1.outerHeight( true );
-	var d1_width              = $div1.outerWidth( true );
-	var d1_distance_from_top  = d1_offset.top + d1_height;
-	var d1_distance_from_left = d1_offset.left + d1_width;
-
-	// Div 2 data
-	var d2_offset             = $div2.offset();
-	var d2_height             = $div2.outerHeight( true );
-	var d2_width              = $div2.outerWidth( true );
-	var d2_distance_from_top  = d2_offset.top + d2_height;
-	var d2_distance_from_left = d2_offset.left + d2_width;
-
-	var not_colliding = ( d1_distance_from_top < d2_offset.top || d1_offset.top > d2_distance_from_top || d1_distance_from_left < d2_offset.left || d1_offset.left > d2_distance_from_left );
-
-	// Return whether it IS colliding
-	return ! not_colliding;
-};
