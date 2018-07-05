@@ -69,10 +69,10 @@ body {
 
 #pcParts {
   position: fixed;
-  left: 815px;
+  left: 800px;
   bottom: 270px;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 250px;
 }
 
 #pcStand {
@@ -126,7 +126,7 @@ body {
   position: absolute;
   width: 35px;
   height: 18px;
-  right: 40px;
+  right: 0;
   bottom: 0;
 }
 
@@ -285,26 +285,26 @@ body {
   visibility: hidden;
 }
 
-/*#cursor {
-  background: url('../resources/key.svg');
+#cursor {
+  background: url('../resources/cursor.svg');
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
-  width: 10px;
-  height: 2px;
-  left: 210px;
-  bottom: 10px;
+  width: 8px;
+  height: 15px;
+  left: 250px;
+  bottom: 125px;
   visibility: hidden;
 }
 
 #btn {
-  background: url('../resources/key.svg');
+  background: url('../resources/btn.svg');
   background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
-  width: 10px;
-  height: 2px;
-  left: 210px;
-  bottom: 10px;
+  width: 50px;
+  height: 20px;
+  left: 135px;
+  bottom: 125px;
   visibility: hidden;
-}*/
+}
